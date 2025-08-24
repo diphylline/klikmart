@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Checkout</title>
+    <link rel="stylesheet" href="detailcheckout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Detail Checkout</h1>
+
+        <div class="checkout-section shipping-address">
+            <h2>Alamat Pengiriman</h2>
+            <div class="address-details">
+                <p><strong>Nama Penerima:</strong> <span id="nama-penerima">John Doe</span></p>
+                <p><strong>Alamat:</strong> <span id="alamat-lengkap">Jl. Contoh No. 123, Kel. Suka Maju, Kec. Jaya Raya, Jakarta Pusat, 12345</span></p>
+                <p><strong>Nomor HP:</strong> <span id="nomor-hp">0812-3456-7890</span></p>
+                <button class="btn-change-address">Ubah Alamat</button>
+            </div>
+        </div>
+
+        <div class="checkout-section order-details">
+            <h2>Rincian Pesanan</h2>
+            <div id="item-list">
+                <div class="order-item">
+                    <img src="placeholder.jpg" alt="Nama Produk" class="item-image">
+                    <div class="item-info">
+                        <p class="item-name">Nama Produk Contoh</p>
+                        <p class="item-quantity">Jumlah: 1</p>
+                    </div>
+                    <p class="item-price">Rp 500.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-section shipping-method">
+            <h2>Metode Pengiriman</h2>
+            <select id="shipping-courier">
+                <option value="JNE">JNE Reguler - Rp 20.000</option>
+                <option value="POS">POS Kilat Khusus - Rp 18.000</option>
+                <option value="TIKI">TIKI ONS - Rp 35.000</option>
+            </select>
+        </div>
+
+        <div class="checkout-section voucher">
+            <h2>Voucher</h2>
+            <input type="text" id="voucher-input" placeholder="Masukkan kode voucher">
+            <button class="btn-apply-voucher">Gunakan</button>
+        </div>
+
+        <div class="checkout-section payment-method">
+            <h2>Metode Pembayaran</h2>
+            <select id="payment-method">
+                <option value="bank-transfer">Transfer Bank (BCA, Mandiri, dll.)</option>
+                <option value="gopay">GoPay</option>
+                <option value="ovo">OVO</option>
+            </select>
+        </div>
+        
+        <div class="checkout-section message-seller">
+            <h2>Pesan untuk Penjual (Opsional)</h2>
+            <textarea id="seller-message" rows="4" placeholder="Contoh: Tolong bungkus dengan bubble wrap extra."></textarea>
+        </div>
+
+        <div class="checkout-section payment-summary">
+            <h2>Ringkasan Belanja</h2>
+            <div class="summary-row">
+                <span>Total Harga (1 Barang)</span>
+                <span id="subtotal-price">Rp 500.000</span>
+            </div>
+            <div class="summary-row">
+                <span>Biaya Pengiriman</span>
+                <span id="shipping-price">Rp 20.000</span>
+            </div>
+            <div class="summary-row">
+                <span>Diskon Voucher</span>
+                <span id="voucher-discount">- Rp 0</span>
+            </div>
+            <hr>
+            <div class="summary-row total">
+                <span>Total Pembayaran</span>
+                <span id="total-price">Rp 520.000</span>
+            </div>
+        </div>
+
+        <div class="checkout-button-container">
+            <button class="btn-checkout" id="btn-checkout">Bayar Sekarang</button>
+        </div>
+    </div>
+
+    <script src="detailcheckout.js"></script>
+</body>
+</html>
