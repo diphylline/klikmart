@@ -13,3 +13,5 @@ Route::get('/produk', [ProdukController::class, 'produk'])->name('produk');
 Route::get('/keranjang', [ProdukController::class, 'keranjang'])->name('keranjang');
 Route::get('/details', [ProdukController::class, 'details'])->name('details');
 Route::post('/tambah/{product}', [ProdukController::class, 'addProduk'])->name('tambah_k');
+Route::get('/details/{id_order}', [ProdukController::class, 'show'])->name('show_details');
+

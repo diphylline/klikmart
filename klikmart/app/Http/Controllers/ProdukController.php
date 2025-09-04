@@ -53,5 +53,10 @@ class ProdukController extends Controller
     public function Details(){
         return view('details');
     }
+
+    public function show($id) {
+         $detail_id = OrderItem::with('product')->findOrFail($id);
+         return view('details', compact('detail_id'));
+    }
 }
 
