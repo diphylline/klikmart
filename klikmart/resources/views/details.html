@@ -12,11 +12,28 @@
 
         <div class="checkout-section shipping-address">
             <h2>Alamat Pengiriman</h2>
-            <div class="address-details">
+            <div class="address-details" id="address-display">
                 <p><strong>Nama Penerima:</strong> <span id="nama-penerima">John Doe</span></p>
                 <p><strong>Alamat:</strong> <span id="alamat-lengkap">Jl. Contoh No. 123, Kel. Suka Maju, Kec. Jaya Raya, Jakarta Pusat, 12345</span></p>
                 <p><strong>Nomor HP:</strong> <span id="nomor-hp">0812-3456-7890</span></p>
-                <button class="btn-change-address">Ubah Alamat</button>
+                <button class="btn-change-address" id="btn-change-address">Ubah Alamat</button>
+            </div>
+        
+            <div class="address-form" id="address-form" style="display: none;">
+                <div class="form-group">
+                    <label for="input-nama">Nama Penerima</label>
+                    <input type="text" id="input-nama" value="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="input-alamat">Alamat Lengkap</label>
+                    <textarea id="input-alamat" rows="3">Jl. Contoh No. 123, Kel. Suka Maju, Kec. Jaya Raya, Jakarta Pusat, 12345</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="input-hp">Nomor HP</label>
+                    <input type="text" id="input-hp" value="0812-3456-7890">
+                </div>
+                <button class="btn-save-address" id="btn-save-address">Simpan Alamat</button>
+                <button class="btn-cancel-address" id="btn-cancel-address">Batal</button>
             </div>
         </div>
 

@@ -1,3 +1,49 @@
+/* ... bagian awal kode ... */
+
+.address-form {
+    margin-top: 15px;
+}
+
+.address-form .form-group {
+    margin-bottom: 15px;
+}
+
+.address-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.address-form input[type="text"],
+.address-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-save-address, .btn-cancel-address {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn-save-address {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-cancel-address {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* ... bagian kode selanjutnya ... */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7f9;
