@@ -69,7 +69,7 @@
         <h5>Cart Total</h5>
         <div class="d-flex justify-content-between border-bottom py-2">
           <span>Subtotal:</span>
-          <span>20.000</span>
+          <span>Rp {{ number_format($totalHarga, 0, ',', '.') }}</span>
         </div>
         <div class="d-flex justify-content-between border-bottom py-2">
           <span>Shipping:</span>
@@ -77,9 +77,9 @@
         </div>
         <div class="d-flex justify-content-between fw-bold py-2">
           <span>Total:</span>
-          <span>20.000</span>
+          <span>Rp {{ number_format($totalHarga, 0, ',', '.') }}</span>
         </div>
-        <button class="btn btn-primary w-100 mt-3">Proceed to checkout</button>
+        <a href="../details" class="btn btn-primary">Proceed to checkout</a>
       </div>
     </div>
   </div>

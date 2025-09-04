@@ -44,7 +44,14 @@ class ProdukController extends Controller
 
     public function Keranjang(){
         $order_item = OrderItem::with('product')->get();
-        return view('keranjang', compact('order_item'));
+        $totalHarga = $order_item->sum(function ($item) {
+        return $item->harga * $item->jumlah;
+    });
+        return view('keranjang', compact('order_item','totalHarga'));
+    }
+
+    public function Details(){
+        return view('details');
     }
 }
 

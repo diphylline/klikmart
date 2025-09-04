@@ -11,4 +11,5 @@ Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
 Route::get('/produk', [ProdukController::class, 'produk'])->name('produk');
 Route::get('/keranjang', [ProdukController::class, 'keranjang'])->name('keranjang');
+Route::get('/details', [ProdukController::class, 'details'])->name('details');
 Route::post('/tambah/{product}', [ProdukController::class, 'addProduk'])->name('tambah_k');
